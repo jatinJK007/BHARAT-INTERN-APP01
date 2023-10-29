@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgcalc"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etnum1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:hint="Number1"
+            android:textColor="#3d383a"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:shadowRadius="59"
+            android:padding="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etnum2"
+            android:layout_width="match_parent"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:shadowColor="@color/black"
+            android:textColor="#3d383a"
+            android:backgroundTint="@color/black"
+            android:shadowRadius="59"
+            android:hint="Number1"
+            android:padding="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#311e25"
+            android:layout_margin="15dp"
+            android:textColorLink="#311e4a"
+            android:layout_weight="1"
+            android:text="Plus" />
+
+        <Button
+            android:id="@+id/btnmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#311e25"
+
+            android:layout_weight="1"
+            android:text="Minus" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnmul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="#311e25"
+
+            android:text="MULTI" />
+
+        <Button
+            android:id="@+id/btndiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#311e25"
+
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="Divide" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="343dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#bc7877"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
